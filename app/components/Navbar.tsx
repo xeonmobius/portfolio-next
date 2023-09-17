@@ -17,11 +17,12 @@ export default function Navbar() {
                 <div className="flex items-center">
                   <Link href="/">
                     <h1 className="text-2xl font-medium">
-                      Shannon <span className="text-red-400">Chowdhury</span>
+                      Shannon <span className="text-red-400 hover:text-red-500">Chowdhury</span>
                     </h1>
                   </Link>
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center">
+                  {/* Home */}
                   <Link
                     href="/"
                     prefetch
@@ -33,17 +34,19 @@ export default function Navbar() {
                   >
                     Home
                   </Link>
+                  {/* Blog */}
                   <Link
-                    href="/guestbook"
+                    href="/blog"
                     prefetch
                     className={`${
-                      path === "/guestbook"
+                      path === "/"
                         ? "border-red-400 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                         : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                     }`}
                   >
-                    GuestBook
+                    Blog
                   </Link>
+                  {/* Project */}
                   <Link
                     href="/projects"
                     prefetch

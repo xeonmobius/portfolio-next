@@ -46,11 +46,11 @@ export default async function Projects() {
                 fill
                 src={project.imageUrl}
                 alt="Image of the project"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover p-2 rounded-xl"
               />
             </div>
             <div className="p-4 sm:p-6">
-              <a href="{project.link}" target="_blank">
+              <a href={project.link} target="_blank">
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white">
                   {project.title}
                 </h3>
@@ -59,7 +59,7 @@ export default async function Projects() {
                 {project.overview}
               </p>
               <a
-                href="{project.link}"
+                href={project.link}
                 target="_blank"
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-red-500"
               >

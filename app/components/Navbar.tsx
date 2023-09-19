@@ -17,7 +17,10 @@ export default function Navbar() {
                 <div className="flex items-center">
                   <Link href="/">
                     <h1 className="text-2xl font-medium">
-                      Shannon <span className="text-red-400 hover:text-red-500">Chowdhury</span>
+                      Shannon{" "}
+                      <span className="text-red-400 hover:text-red-500">
+                        Chowdhury
+                      </span>
                     </h1>
                   </Link>
                 </div>
@@ -34,8 +37,8 @@ export default function Navbar() {
                   >
                     Home
                   </Link>
-                  {/* Blog TO BE BUILD LATER*/}
-                  {/* <Link
+                  {/* Blog */}
+                  <Link
                     href="/blog"
                     prefetch
                     className={`${
@@ -45,7 +48,7 @@ export default function Navbar() {
                     }`}
                   >
                     Blog
-                  </Link> */}
+                  </Link>
                   {/* Project */}
                   <Link
                     href="/projects"

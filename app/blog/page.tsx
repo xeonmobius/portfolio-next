@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { client } from "../lib/sanity";
 import Image from "next/image";
 
@@ -52,24 +53,23 @@ export default async function Blog() {
               /> */}
             </div>
             <div className="p-4 sm:p-6">
-              <a href="{project.link}" target="_blank">
+              <Link href={`/blog/${project._id}`}>
                 <h3 className="text-xl font-medium text-gray-900 dark:text-white">
                   {project.title}
                 </h3>
-              </a>
+              </Link>
               <p className="line-clamp-3 mt-2 text-sm leading-relaxed text-gray-500 dark:text-gray-400">
                 {project.abstract}
               </p>
-              <a
-                href="{project.link}"
-                target="_blank"
+              <Link
+                href={`/blog/${project._id}`}
                 className="group mt-4 inline-flex items-center gap-1 text-sm font-medium text-red-500"
               >
                 See more!
                 <span className="block transtion-all group-hover:ms-0.5">
                   &rarr;
                 </span>
-              </a>
+              </Link>
             </div>
           </article>
         ))}

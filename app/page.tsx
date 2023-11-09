@@ -2,10 +2,10 @@ import Image from "next/image";
 import Me from "@/public/me.jpeg";
 
 const bio_string =
-  "Hi, I'm Shannon, a seasoned Product Analyst with two years in tech. I started with a tech passion and evolved into bridging user needs with innovation. Full-stack app development refined my skills and UX awareness. Now, I'm geared towards becoming a Product Manager. My aim: utilize my tech know-how and analytical mindset for strategic decisions, visionary roadmaps, and fostering innovation. Come with me on this journey into product management, where we transform ideas into impactful solutions.";
+  "Hi, I'm Shannon, a seasoned Product Analyst with two years of experience in tech. I started with a passion in tech and evolved into bridging user needs with innovation. Frontend development refined my skills and UX awareness. Now, I'm geared towards becoming a Frontend developer.";
 
 const short_bio_string =
-  "Hi, I'm Shannon! I enjoy creating complex full-stack apps.";
+  "Hi, I'm Shannon! I enjoy creating complex frontend apps.";
 
 export default function Home() {
   return (
